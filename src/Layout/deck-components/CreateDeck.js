@@ -3,25 +3,26 @@ import { Link, useHistory } from 'react-router-dom';
 import { createDeck } from '../../utils/api';
 
 function CreateDeck() {
-    const [ newDeckName, setNewDeckName ] = useState("");
-    const [ newDeckDescription, setNewDeckDescription ] = useState("");
+    const [ name, setName ] = useState("");
+    const [ description, setDescription ] = useState("");
 
     const history = useHistory();
 
     const newDeckSubmitHandler = (event) => {
         event.preventDefault();
-        createDeck({newDeckName, newDeckDescription})
+        const deck = { name, description };
+        createDeck(deck)
         .then(response => {
             history.push(`/decks/${response.id}`);
         })
-        setNewDeckName("");
-        setNewDeckDescription("");
+        setName("");
+        setDescription("");
     };
 
     const cancelNewDeckHandler = (event) => {
         event.preventDefault();
-        setNewDeckName("");
-        setNewDeckDescription("");
+        setName("");
+        setDescription("");
         history.push("/");
     }
 
@@ -47,8 +48,8 @@ function CreateDeck() {
                     placeholder="Deck Name"
                     name="new_deck_name"
                     type="text"
-                    onChange={(event) => setNewDeckName(event.target.value)}
-                    value={newDeckName}
+                    onChange={(event) => setName(event.target.value)}
+                    value={name}
                     />
                     <div className="pt-5">
                         <span className="p-1">
@@ -68,8 +69,8 @@ function CreateDeck() {
                     placeholder="Brief description of the deck"
                     name="new_deck_description"
                     type="text"
-                    onChange={(event) => setNewDeckDescription(event.target.value)}
-                    value={newDeckDescription}
+                    onChange={(event) => setDescription(event.target.value)}
+                    value={description}
                     />
                     </div>
                     </div>

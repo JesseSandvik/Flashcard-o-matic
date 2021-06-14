@@ -45,7 +45,7 @@ function DeckList() {
                                             event.preventDefault();
                                             if (window.confirm("Delete this deck? You will not be able to recover it.")) {
                                                 deleteDeck(deck.id);
-                                                history.push("/");
+                                                history.go(0);
                                             }}}
                                             >
                                             Delete</button>

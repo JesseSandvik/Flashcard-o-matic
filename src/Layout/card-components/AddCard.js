@@ -27,11 +27,12 @@ function AddCard(){
         createCard(deckId, {front, back});
         setFront("");
         setBack("");
+        history.go(`/decks/${deck.id}`);
     }
 
     const doneCardHandler = (event) => {
         event.preventDefault();
-        history.push(`/decks/${deckId}`);
+        history.push(`/decks/${deck.id}`);
     }
 
     if (deck) {
@@ -40,7 +41,7 @@ function AddCard(){
             <div aria-label="breadcrumb">
                 <ol className="breadcrumb">
                     <li className="breadcrumb-item"><Link to="/">Home</Link></li>
-                    <li className="breadcrumb-item"><Link to={`/decks/${deckId}`}>{deck.name}</Link></li>
+                    <li className="breadcrumb-item"><Link to={`/decks/${deck.id}`}>{deck.name}</Link></li>
                     <li className="breadcrumb-item active" aria-current="page">Add Card</li>
                 </ol>
             </div>

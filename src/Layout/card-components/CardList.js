@@ -26,7 +26,7 @@ function CardList({ deck, cards }) {
                                         onClick={() => {
                                         if(window.confirm("Delete this card? You will not be able to recover it.")) {
                                           deleteCard(card.id);
-                                          history.push(`/decks/${deck.id}`);
+                                          history.go(`/decks/${deck.id}`);
                                 }}}>Delete Card</button>
                                 </div>
                                 </div>
