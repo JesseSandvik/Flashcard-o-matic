@@ -1,6 +1,8 @@
-# React-Flash-Cards
-Interactive study aid, web based flashcard application used to test your knowledge on a given subject.
-User is able to add, delete, and edit both decks and cards for each given deck.
-Study buddy application built using VS Code, React.js library, React Router and React Hooks for routing and API, HTML, JS, and Bootstrap programming lanuages, tested locally with Node.js.
-This project was great practice for using React Hooks, it helped me establish a deeper understanding of the API process in React.js.
-Future potential for expanding the project to include a timer to add some pressure to the flashcard study process.
+#Flash-O-Matic: A digital flashcard application
+
+#Overview
+Flash-O-Matic is an application for creating, editing, and deleting digital flashcards and decks of flashcards. Each flashcard has a front and back; the front shows the question, the back shows the answer, and there is a button to flip the card. You can save a series of cards as a deck. This is useful to keep the cards organized by relevance. Cards and decks can be added, modified, and/or deleted. 
+
+#Installation
+Fork & clone the repo, install locally using npm install/yarn add. This is a mono-repo, be sure to run the server prior to utilizing the application.
+
