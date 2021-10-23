@@ -14,7 +14,7 @@ Flashcard-o-matic is an application for creating, editing, and deleting digital 
 ## Installation
 Fork & clone the repository. |
 ---------------------------- |
-cd Flashcard-o-matic             |
+cd Flashcard-o-matic         |
 npm install                  |
 npm run start:server         |
 npm run start:react          |
