@@ -23,5 +23,3 @@ This application was originally built as part of the curriculum from my time in 
 Please refrain from modifiying these files in this repository.
 
 You are free to create your own repository and edit the files as you see fit.
-
-Enjoy!
