@@ -18,9 +18,10 @@ Once the application and server are running, you can create, edit, and/or delete
 This application was built using React, JavaScript, HTML, Bootstrap for styling, & Jest/React Testing Library for testing.
 
 ## Contributions
-This application was originally built as part of the curriculum from my time in the full-stack engineering program at [Thinkful](https://www.thinkful.com/)
+This application was originally built as part of the curriculum from my time in the full-stack engineering program at [Thinkful](https://www.thinkful.com/).
 
 Please refrain from modifiying these files in this repository.
+
 You are free to create your own repository and edit the files as you see fit.
 
 Enjoy!
