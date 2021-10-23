@@ -20,7 +20,8 @@ npm run start:server         |
 npm run start:react          |
 
 ## Usage
-Once the application and server are running, you can create, edit, and/or delete cards & decks as you see fit.
+Once the application and server are running, you can create, edit, and/or delete cards & decks as you see fit. Each deck can be studied, and each card in the deck will have a front and back. I strongly advise having the front of the card ask a question, and the back of the card having the answer. This application was designed with this structure in mind. The back of the card will only be shown when the 'flip' button is clicked.
+
 
 ## Build Notes
 This application was built using React, JavaScript, HTML, Bootstrap for styling, & Jest/React Testing Library for testing.
