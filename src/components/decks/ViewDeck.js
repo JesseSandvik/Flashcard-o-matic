@@ -39,9 +39,10 @@ export default function ViewDeck() {
             </nav>
             <h2 className="p-2">View Deck</h2>
             <Deck deck={currentDeck} currentPage={"ViewDeck"} />
-            <br />
-            <CreateButton routePath={`/decks/${deckId}/cards/new`} buttonFunction={"Card"} />
-            <h3 className="p-5">Cards</h3>
+            <div className="p-5">
+                <h3>Cards</h3>
+                <CreateButton routePath={`/decks/${deckId}/cards/new`} buttonFunction={"Card"} />
+            </div>
             <CardList deck={currentDeck} cards={currentDeck.cards} />
         </>
     );

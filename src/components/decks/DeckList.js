@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { listDecks } from '../../utils/api';
+import CreateButton from '../buttons/CreateButton';
 import Deck from './Deck';
 
 export default function DeckList() {
@@ -24,10 +25,24 @@ export default function DeckList() {
     if (decks) {
         return (
             <>
-                <h2>Available Decks</h2>
+                <h2 className="p-2">Available Decks</h2>
+                <CreateButton 
+                  routePath={"/decks/new"}
+                  buttonFunction={"Deck"}
+                />
+                <br />
                 <ul className="container list-unstyled">{listOfDecks}</ul>
             </>
         );
     }
-    return <p>There are no decks yet.</p>
+    return (
+      <>
+        <h2>There are no decks yet.</h2>
+        <p>Let's create one and get started!</p>
+        <CreateButton 
+          routePath={"/decks/new"}
+          buttonFunction={"Deck"}
+        />
+      </>
+    );
 };
