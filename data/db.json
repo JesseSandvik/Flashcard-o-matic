@@ -9,6 +9,11 @@
       "name": "React Router",
       "description": "React Router is a collection of navigational components that compose declaratively with your application.",
       "id": 2
+    },
+    {
+      "name": "Sample",
+      "description": "This is a sample deck.",
+      "id": 3
     }
   ],
   "cards": [
@@ -43,11 +48,22 @@
       "id": 5
     },
     {
-      "cards": [],
-      "front": "b",
-      "back": "b",
-      "deckId": 1,
+      "id": 6
+    },
+    {
       "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "front": "Fake Card 1",
+      "back": "This is Fake Card 1.",
+      "deckId": 3,
+      "id": 10
     }
   ]
 }

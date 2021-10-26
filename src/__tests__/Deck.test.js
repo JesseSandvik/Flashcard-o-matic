@@ -111,14 +111,11 @@ describe("Decks", () => {
       </Router>
     );
 
-    const titleElements = await screen.findAllByText("Create Deck");
+    const titleElements = await screen.findAllByText("Create A New Deck");
     expect(titleElements.length).toBeGreaterThanOrEqual(1);
 
-    const inputs = container.querySelectorAll("input");
-    expect(inputs).toHaveLength(1);
-
     const textAreas = container.querySelectorAll("textarea");
-    expect(textAreas).toHaveLength(1);
+    expect(textAreas).toHaveLength(2);
   });
 
   test("route for /decks/:deckId/edit", async () => {
@@ -167,7 +164,7 @@ describe("Decks", () => {
     const deckNameElements = await screen.findAllByText("Mock squash");
     expect(deckNameElements.length).toBeGreaterThanOrEqual(1);
 
-    const titleElements = await screen.findAllByText("Add Card");
+    const titleElements = await screen.findAllByText("Create A New Card");
     expect(titleElements.length).toBeGreaterThanOrEqual(1);
 
     const textAreas = container.querySelectorAll("textarea");

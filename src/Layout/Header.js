@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react';
 
-function Header() {
+export default function Header(props) {
   return (
     <header className="jumbotron bg-dark">
       <div className="container text-white">
-        <h1 className="display-4">Flashcard-o-matic</h1>
-        <p className="lead">Discover The Flashcard Difference.</p>
+        <h1 className="display-4">{props.siteTitle}</h1>
+        <p className="lead">{props.siteDescription}</p>
       </div>
     </header>
   );
-}
-
-export default Header;
+};

@@ -77,7 +77,7 @@ describe("App", () => {
         <App />
       </Router>
     );
-    expect(screen.getByText("Not Found")).toBeTruthy();
+    expect(screen.getByText("Not found!")).toBeTruthy();
   });
 
   test("route for /", async () => {
@@ -109,9 +109,9 @@ describe("App", () => {
 
     await act(() => mockDecksPromise);
 
+    expect(screen.getByText("Available Decks")).toBeTruthy();
+    expect(screen.getByText("Create A New Deck")).toBeTruthy();
     expect(screen.getByText("Mock Rendering in React")).toBeTruthy();
-    expect(screen.getByText("2 cards")).toBeTruthy();
     expect(screen.getByText("Mock React Router")).toBeTruthy();
-    expect(screen.getByText("0 cards")).toBeTruthy();
   });
 });
