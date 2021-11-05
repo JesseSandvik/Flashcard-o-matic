@@ -1,0 +1,16 @@
+
+
+html, body {
+    background-color: #495159;
+    color: white;
+}
+
+header {
+    border: 3px solid green;
+}
+
+.card {
+    background-color: black;
+    border: 3px solid green;
+    border-radius: 10px;
+}

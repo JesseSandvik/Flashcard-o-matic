@@ -6,7 +6,7 @@ export default function App() {
   const siteDescription = "Discover the Flashcard Difference."
   
   return <Layout
-            siteTitle={siteTitle}
-            siteDescription={siteDescription}
+          siteTitle={siteTitle}
+          siteDescription={siteDescription}
          />
 };

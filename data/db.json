@@ -11,8 +11,8 @@
       "id": 2
     },
     {
-      "name": "Sample",
-      "description": "This is a sample deck.",
+      "name": "Back-end Fundamentals",
+      "description": "The fundamentals of back-end web development",
       "id": 3
     }
   ],
@@ -58,12 +58,6 @@
     },
     {
       "id": 9
-    },
-    {
-      "front": "Fake Card 1",
-      "back": "This is Fake Card 1.",
-      "deckId": 3,
-      "id": 10
     }
   ]
 }
