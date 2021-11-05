@@ -1,52 +1,27 @@
 {
   "decks": [
     {
-      "id": 1,
-      "name": "Rendering in React",
-      "description": "React's component structure allows for quickly building a complex web application that relies on DOM manipulation. "
+      "name": "HTTP & TCP",
+      "description": "Part one of internet fundamentals and functionality",
+      "id": 1
     },
     {
-      "name": "React Router",
-      "description": "React Router is a collection of navigational components that compose declaratively with your application.",
+      "name": "Front-End Principles",
+      "description": "Front-End web development principles",
       "id": 2
     },
     {
-      "name": "Back-end Fundamentals",
-      "description": "The fundamentals of back-end web development",
-      "id": 3
+      "id": 3,
+      "name": "Back-End Principles",
+      "description": "Back-end web development principles"
+    },
+    {
+      "id": 4,
+      "name": "Back-End HTTP Status Codes",
+      "description": "A collection of status code questions"
     }
   ],
   "cards": [
-    {
-      "id": 1,
-      "front": "Differentiate between Real DOM and Virtual DOM.",
-      "back": "Virtual DOM updates are faster but do not directly update the HTML",
-      "deckId": 1
-    },
-    {
-      "id": 2,
-      "front": "How do you modify the state of a different React component?",
-      "back": "Not at all! State is visible to the component only.",
-      "deckId": 1
-    },
-    {
-      "id": 3,
-      "front": "How do you pass data 'down' to a React child component?",
-      "back": "As properties or props",
-      "deckId": 1
-    },
-    {
-      "front": "What path will match the follow Route?\n<Route>\n  <NotFound />\n</Route>",
-      "back": "All paths. A route with no path matches all URL's",
-      "deckId": 2,
-      "id": 4
-    },
-    {
-      "front": "What does <Switch> do?",
-      "back": "Renders the first matching child <Route> ",
-      "deckId": 2,
-      "id": 5
-    },
     {
       "id": 6
     },
@@ -58,6 +33,78 @@
     },
     {
       "id": 9
+    },
+    {
+      "front": "What does HTTP stand for?",
+      "back": "Hypertext Transfer Protocol",
+      "deckId": 1,
+      "id": 10
+    },
+    {
+      "front": "What is the responsibility of HTTP?",
+      "back": "To structure requests and responses over the internet. HTTP requires data to be transferred from one point to another over the network.",
+      "deckId": 1,
+      "id": 11
+    },
+    {
+      "front": "What is TCP?",
+      "back": "Transmission Control Protocol",
+      "deckId": 1,
+      "id": 12
+    },
+    {
+      "front": "What does TCP do?",
+      "back": "Transmission Control Protocol manages the channels between your browser and the server. It manages many types of internet connections in which one computer or device wants to send something to another.",
+      "deckId": 1,
+      "id": 13
+    },
+    {
+      "front": "What is HTTP in relation to TCP?",
+      "back": "Hypertext Transfer Protocol is the command language that the devices on both sides of the Transmission Control Protocol must follow in order to communicate.",
+      "deckId": 1,
+      "id": 14
+    },
+    {
+      "front": "What is the back-end?",
+      "back": "The technology required to process the incoming requests, generate responses, and send them back to the client.",
+      "deckId": 3,
+      "id": 15
+    },
+    {
+      "front": "What is a server?",
+      "back": "A computational system that listens for incoming requests.",
+      "deckId": 3,
+      "id": 16
+    },
+    {
+      "front": "What does an HTTP status code of 1xx represent?",
+      "back": "Informational. A request has been received, continuing to process.",
+      "deckId": 4,
+      "id": 17
+    },
+    {
+      "front": "What does an HTTP status code of 2xx represent?",
+      "back": "Success. The action requested by the client has been received, understood, and accepted.",
+      "deckId": 4,
+      "id": 18
+    },
+    {
+      "front": "What does an HTTP status code of 3xx represent?",
+      "back": "Redirection. The client must take additional action to complete the request.",
+      "deckId": 4,
+      "id": 19
+    },
+    {
+      "front": "What does an HTTP status code of 4xx represent?",
+      "back": "Client Error. The server should include an entity containing an explanation of the error situation, and whether it is a temporary or permanent condition.",
+      "deckId": 4,
+      "id": 20
+    },
+    {
+      "front": "What does an HTTP status code of 5xx represent?",
+      "back": "Server Error. The server failed to fulfill an apparently valid request.",
+      "deckId": 4,
+      "id": 21
     }
   ]
 }

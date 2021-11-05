@@ -25,13 +25,14 @@ export default function DeckList() {
     if (decks) {
         return (
             <>
+                <div className="p-5">
+                  <CreateButton 
+                    routePath={"/decks/new"}
+                    buttonFunction={"Deck"}
+                  />
+                </div>
                 <h2 className="p-2">Available Decks</h2>
-                <CreateButton 
-                  routePath={"/decks/new"}
-                  buttonFunction={"Deck"}
-                />
-                <br />
-                <ul className="container list-unstyled">{listOfDecks}</ul>
+                <ul className="container list-unstyled p-5">{listOfDecks}</ul>
             </>
         );
     }
